@@ -1,8 +1,11 @@
+'use client';
+
 import React from 'react';
 import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
 import IconDefs from '@/components/IconDefs';
+import ExamplePanel from '@/components/ExamplePanel';
 
 export default function Evo4ValidationSlide() {
   return (
@@ -67,7 +70,9 @@ export default function Evo4ValidationSlide() {
         </div>
 
         {/* Right: text */}
-        <div className="w-[35%] flex flex-col">
+        <div className="w-[35%] flex flex-col relative">
+          <ExamplePanel step={3} />
+
           <div className="accent-block mb-5">
             <p className="text-gray-700 text-base">
               We added <strong>edge-case-generator</strong>, <strong>reference-validator</strong>, and <strong>ci-fixer</strong> to automatically iterate on failures. The workflow now loops&mdash;when tests fail, ci-fixer analyzes the error and retries.

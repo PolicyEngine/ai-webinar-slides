@@ -1,8 +1,11 @@
+'use client';
+
 import React from 'react';
 import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
 import IconDefs from '@/components/IconDefs';
+import ExamplePanel from '@/components/ExamplePanel';
 
 export default function Evo2PipelineSlide() {
   return (
@@ -45,7 +48,9 @@ export default function Evo2PipelineSlide() {
         </div>
 
         {/* Right: text */}
-        <div className="w-[45%] flex flex-col">
+        <div className="w-[45%] flex flex-col relative">
+          <ExamplePanel step={1} />
+
           <div className="accent-block mb-5">
             <p className="text-gray-700 text-base">
               We introduced <strong>agents</strong>&mdash;specialized AI workers that each focus on a single concern. A document-collector gathers sources. A parameter-architect structures data. A rules-engineer implements logic. A test-creator writes validations.

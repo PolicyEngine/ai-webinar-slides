@@ -5,6 +5,7 @@ import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
 import IconDefs from '@/components/IconDefs';
+import ExamplePanel from '@/components/ExamplePanel';
 
 const agents: Record<string, { x: number; y: number; r: number; icon: string; label: string | string[]; labelY: number }> = {
   'issue-manager': { x: 55, y: 230, r: 35, icon: '#icon-clipboard', label: 'issue-manager', labelY: 280 },
@@ -58,7 +59,7 @@ export default function Evo6FullWorkflowSlide() {
       <div className="flex gap-6 h-[calc(100vh-280px)]">
         {/* Left: diagram */}
         <div className="w-[65%] bg-[#f9f8f6] rounded-xl p-2 border border-gray-100 flex items-center justify-center">
-          <svg className="full-width-flow-svg" viewBox="0 0 950 550" style={{ maxWidth: 850 }}>
+          <svg className="full-width-flow-svg" viewBox="0 0 950 550">
             <IconDefs />
 
             <ellipse className="loop-indicator" cx="430" cy="230" rx="260" ry="195" />
@@ -123,15 +124,18 @@ export default function Evo6FullWorkflowSlide() {
                 </g>
               );
             })}
+            <text x={skills[skills.length - 1].x + skillWidth / 2 + 20} y={skillY + skillHeight / 2 + 4} fontFamily="JetBrains Mono" fontSize="14" fill="var(--accent)">...</text>
             <text x="475" y="540" textAnchor="middle" fontFamily="JetBrains Mono" fontSize="10" fill="var(--text-mid)" fontStyle="italic">Hover over a skill to see which agents use it</text>
           </svg>
         </div>
 
         {/* Right: text */}
-        <div className="w-[35%] flex flex-col">
+        <div className="w-[35%] flex flex-col relative">
+          <ExamplePanel step={5} />
+
           <div className="accent-block mb-5">
             <p className="text-gray-700 text-base">
-              The complete pipeline: <strong>11 agents</strong> and <strong>6 skills</strong> working together. One command triggers the entire workflow&mdash;from issue creation to a draft PR ready for human review.
+              The complete pipeline: <strong>11 agents</strong> and <strong>10 skills</strong> working together. One command triggers the entire workflow&mdash;from issue creation to a draft PR ready for human review.
             </p>
           </div>
 
@@ -155,7 +159,7 @@ export default function Evo6FullWorkflowSlide() {
               <div className="text-xs text-gray-500">agents</div>
             </div>
             <div className="flex-1 content-card p-2 text-center">
-              <div className="text-xl font-black text-pe-teal">6</div>
+              <div className="text-xl font-black text-pe-teal">10</div>
               <div className="text-xs text-gray-500">skills</div>
             </div>
           </div>

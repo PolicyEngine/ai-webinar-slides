@@ -1,8 +1,11 @@
+'use client';
+
 import React from 'react';
 import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
 import IconDefs from '@/components/IconDefs';
+import ExamplePanel from '@/components/ExamplePanel';
 
 export default function Evo1SinglePromptSlide() {
   return (
@@ -32,7 +35,9 @@ export default function Evo1SinglePromptSlide() {
         </div>
 
         {/* Right: text */}
-        <div className="w-[45%] flex flex-col">
+        <div className="w-[45%] flex flex-col relative">
+          <ExamplePanel step={0} />
+
           <div className="accent-block mb-5">
             <p className="text-gray-700 text-base">
               We started with the simplest approach: a single prompt asking Claude to implement one benefit program end-to-end. <strong>One command, one output</strong>&mdash;parameters, variables, tests, everything in one shot.
