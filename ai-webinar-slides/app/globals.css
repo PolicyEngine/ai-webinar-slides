@@ -21,6 +21,14 @@
   --warning: #b45309;
   --border: #d4dede;
   --bg-diagram: #f9f8f6;
+
+  /* Microsim table column colors */
+  --col-baseline: #eef6fb;
+  --col-reform-tax: #ecfaf4;
+  --col-earnings: #fef9ec;
+  --col-behavior: #ecfaf4;
+  --col-delta: #f4f0fa;
+  --col-weight: #f3f4f6;
 }
 
 html {
@@ -216,6 +224,102 @@ h1, h2, h3 {
     background: linear-gradient(135deg, var(--pe-light) 0%, white 100%);
     box-shadow: 0 4px 12px rgba(49, 151, 149, 0.15);
   }
+}
+
+/* ==================== MICROSIM TABLE ==================== */
+.microsim-table {
+  @apply bg-white rounded-2xl border border-gray-100 overflow-hidden;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.04),
+    0 4px 16px rgba(49, 151, 149, 0.06),
+    0 12px 40px rgba(0,0,0,0.04);
+}
+
+.microsim-table table {
+  @apply w-full text-xl;
+  border-collapse: collapse;
+}
+
+/* Group label row ("Baseline" / "Reform") */
+.microsim-table thead tr:first-child {
+  background: linear-gradient(180deg, #f0f6f6 0%, #e8f0f0 100%);
+}
+
+.microsim-table thead tr:first-child th {
+  @apply py-2 px-6 text-sm font-semibold tracking-wider uppercase;
+  color: var(--text-mid);
+  letter-spacing: 0.06em;
+}
+
+.microsim-table .group-baseline {
+  color: var(--accent);
+}
+
+.microsim-table .group-reform {
+  color: #16a34a;
+}
+
+/* Column header row */
+.microsim-table thead tr:last-child {
+  background: linear-gradient(180deg, #f0f6f6 0%, #e8f0f0 100%);
+  border-bottom: 2px solid var(--accent-mid);
+}
+
+.microsim-table thead tr:last-child th {
+  @apply px-6 py-3 text-left text-sm font-bold;
+  color: var(--text-dark);
+  letter-spacing: 0.01em;
+}
+
+/* Column background colors via CSS vars */
+.microsim-table .col-baseline { background: var(--col-baseline); }
+.microsim-table .col-reform-tax { background: var(--col-reform-tax); }
+.microsim-table .col-earnings { background: var(--col-earnings); }
+.microsim-table .col-behavior { background: var(--col-behavior); }
+.microsim-table .col-delta { background: var(--col-delta); }
+.microsim-table .col-weight { background: var(--col-weight); }
+
+/* Data cells */
+.microsim-table tbody td {
+  @apply px-6 py-3;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+/* Input columns (Gross income, # kids) stay sans-serif */
+.microsim-table tbody td.col-input {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+}
+
+/* Row separators */
+.microsim-table tbody tr + tr {
+  border-top: 1px solid #e5eaea;
+}
+
+/* TOTAL row */
+.microsim-table tbody tr.row-total {
+  border-top: 3px solid var(--accent);
+}
+
+.microsim-table tbody tr.row-total td {
+  @apply font-bold;
+  color: var(--accent);
+  background: linear-gradient(180deg, rgba(13,115,119,0.06) 0%, rgba(13,115,119,0.02) 100%);
+}
+
+.microsim-table tbody tr.row-total td.col-baseline { background: color-mix(in srgb, var(--col-baseline) 70%, rgba(13,115,119,0.1)); }
+.microsim-table tbody tr.row-total td.col-reform-tax { background: color-mix(in srgb, var(--col-reform-tax) 70%, rgba(13,115,119,0.1)); }
+.microsim-table tbody tr.row-total td.col-earnings { background: color-mix(in srgb, var(--col-earnings) 70%, rgba(13,115,119,0.1)); }
+.microsim-table tbody tr.row-total td.col-behavior { background: color-mix(in srgb, var(--col-behavior) 70%, rgba(13,115,119,0.1)); }
+.microsim-table tbody tr.row-total td.col-delta { background: color-mix(in srgb, var(--col-delta) 70%, rgba(13,115,119,0.1)); }
+.microsim-table tbody tr.row-total td.col-weight { background: color-mix(in srgb, var(--col-weight) 70%, rgba(13,115,119,0.1)); }
+
+/* Ellipsis row */
+.microsim-table tbody tr.row-ellipsis td {
+  color: var(--text-light);
+  @apply py-1;
 }
 
 /* ==================== ANIMATIONS ==================== */

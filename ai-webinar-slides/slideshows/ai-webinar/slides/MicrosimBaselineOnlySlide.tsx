@@ -3,7 +3,7 @@ import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
 
-export default function MicrosimIntroSlide() {
+export default function MicrosimBaselineOnlySlide() {
   return (
     <Slide>
       <SlideHeader>
@@ -18,13 +18,13 @@ export default function MicrosimIntroSlide() {
                 <tr>
                   <th className="px-6 py-1"></th>
                   <th className="px-6 py-1"></th>
-                  <th className="px-6 py-1 text-center group-baseline opacity-0">Baseline</th>
+                  <th className="px-6 py-1 text-center group-baseline">Baseline</th>
                   <th className="px-6 py-1 text-left group-reform opacity-0" colSpan={5}>Reform</th>
                 </tr>
                 <tr>
                   <th className="w-32">Gross income</th>
                   <th className="w-24"># kids</th>
-                  <th className="col-baseline opacity-0 w-28">Taxes</th>
+                  <th className="col-baseline w-28">Taxes</th>
                   <th className="col-reform-tax opacity-0 w-32">Taxes Static</th>
                   <th className="col-earnings opacity-0 w-32">Δ earnings</th>
                   <th className="col-behavior opacity-0 w-36">Tax w/ behavior</th>
@@ -36,7 +36,7 @@ export default function MicrosimIntroSlide() {
                 <tr>
                   <td className="col-input">$100,000</td>
                   <td className="col-input">0</td>
-                  <td className="col-baseline opacity-0">$21,000</td>
+                  <td className="col-baseline">$21,000</td>
                   <td className="col-reform-tax opacity-0">$20,000</td>
                   <td className="col-earnings opacity-0">+$700</td>
                   <td className="col-behavior opacity-0">$20,150</td>

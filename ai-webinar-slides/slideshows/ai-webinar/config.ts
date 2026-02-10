@@ -3,6 +3,7 @@ import CoverSlide from './slides/CoverSlide';
 import AgendaSlide from './slides/AgendaSlide';
 import ThreeIngredientsSlide from './slides/ThreeIngredientsSlide';
 import MicrosimIntroSlide from './slides/MicrosimIntroSlide';
+import MicrosimBaselineOnlySlide from './slides/MicrosimBaselineOnlySlide';
 import MicrosimBaselineSlide from './slides/MicrosimBaselineSlide';
 import MicrosimDynamicsSlide from './slides/MicrosimDynamicsSlide';
 import MicrosimAggregateSlide from './slides/MicrosimAggregateSlide';
@@ -36,6 +37,7 @@ export const aiWebinarConfig: SlideshowConfig = {
     AgendaSlide,
     ThreeIngredientsSlide,
     MicrosimIntroSlide,
+    MicrosimBaselineOnlySlide,
     MicrosimBaselineSlide,
     MicrosimDynamicsSlide,
     MicrosimAggregateSlide,
