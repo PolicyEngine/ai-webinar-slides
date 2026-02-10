@@ -10,6 +10,7 @@ import OurApproachSlide from './slides/OurApproachSlide';
 import ClaudeCodeDemoSlide from './slides/ClaudeCodeDemoSlide';
 import PartnersSlide from './slides/PartnersSlide';
 import HowPEWorksSlide from './slides/HowPEWorksSlide';
+import CoverageTrackerSlide from './slides/CoverageTrackerSlide';
 import ScaleChallengeSlide from './slides/ScaleChallengeSlide';
 import SolutionOverviewSlide from './slides/SolutionOverviewSlide';
 import Evo1SinglePromptSlide from './slides/Evo1SinglePromptSlide';
@@ -42,6 +43,7 @@ export const aiWebinarConfig: SlideshowConfig = {
     PartnersSlide,
     ClaudeCodeDemoSlide,
     HowPEWorksSlide,
+    CoverageTrackerSlide,
     ScaleChallengeSlide,
 
     // The solution
