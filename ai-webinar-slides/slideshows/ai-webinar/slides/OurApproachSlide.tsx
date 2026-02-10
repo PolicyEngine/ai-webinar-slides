@@ -18,20 +18,20 @@ export default function OurApproachSlide() {
               <h2 className="text-4xl font-bold">Policies</h2>
             </div>
             <ul className="space-y-3 text-xl text-[#2C7A7B]">
-              <li className="flex items-start gap-2">
-                <span className="mt-1">•</span>
+              <li className="flex items-center gap-3">
+                <span className="text-[#319795] text-2xl leading-none">•</span>
                 <span>Federal income &amp; payroll tax</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1">•</span>
+              <li className="flex items-center gap-3">
+                <span className="text-[#319795] text-2xl leading-none">•</span>
                 <span>State income tax (all 50 states)</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1">•</span>
+              <li className="flex items-center gap-3">
+                <span className="text-[#319795] text-2xl leading-none">•</span>
                 <span>Child Tax Credits (federal &amp; state)</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1">•</span>
+              <li className="flex items-center gap-3">
+                <span className="text-[#319795] text-2xl leading-none">•</span>
                 <span>SNAP, Medicaid, CHIP, ACA PTC, SSI</span>
               </li>
             </ul>
@@ -43,20 +43,20 @@ export default function OurApproachSlide() {
               <h2 className="text-4xl font-bold">Households</h2>
             </div>
             <ul className="space-y-3 text-xl text-[#2C7A7B]">
-              <li className="flex items-start gap-2">
-                <span className="mt-1">•</span>
+              <li className="flex items-center gap-3">
+                <span className="text-[#319795] text-2xl leading-none">•</span>
                 <span>CPS ASEC foundation</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1">•</span>
+              <li className="flex items-center gap-3">
+                <span className="text-[#319795] text-2xl leading-none">•</span>
                 <span>Integrates IRS PUF, ACS, SCF, and SIPP</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1">•</span>
+              <li className="flex items-center gap-3">
+                <span className="text-[#319795] text-2xl leading-none">•</span>
                 <span>State-specific datasets</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1">•</span>
+              <li className="flex items-center gap-3">
+                <span className="text-[#319795] text-2xl leading-none">•</span>
                 <span>Calibrated to state aggregates</span>
               </li>
             </ul>
@@ -68,8 +68,8 @@ export default function OurApproachSlide() {
               <h2 className="text-4xl font-bold">Dynamics</h2>
             </div>
             <ul className="space-y-3 text-xl text-[#2C7A7B]">
-              <li className="flex items-start gap-2">
-                <span className="mt-1">•</span>
+              <li className="flex items-center gap-3">
+                <span className="text-[#319795] text-2xl leading-none">•</span>
                 <span>Labor supply elasticities</span>
               </li>
             </ul>

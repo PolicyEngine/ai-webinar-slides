@@ -21,6 +21,10 @@
   --warning: #b45309;
 }
 
+html {
+  font-size: 18px;
+}
+
 * {
   margin: 0;
   padding: 0;
