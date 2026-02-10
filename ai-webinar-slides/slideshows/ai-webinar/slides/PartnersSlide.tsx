@@ -3,6 +3,7 @@ import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
 import Image from 'next/image';
+import { assetPath } from '@/lib/assetPath';
 
 const organizations: { name: string; logo?: string; smaller?: boolean; textLogo?: string }[] = [
   { name: 'Prenatal-to-3 Policy Impact Center', logo: '/logos/organizations/pn3policy.png' },
@@ -45,7 +46,7 @@ export default function PartnersSlide() {
             >
               {org.logo ? (
                 <Image
-                  src={org.logo}
+                  src={assetPath(org.logo)}
                   alt={org.name}
                   width={org.smaller ? 80 : 110}
                   height={65}

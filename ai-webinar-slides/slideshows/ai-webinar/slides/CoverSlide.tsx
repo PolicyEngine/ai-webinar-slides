@@ -1,6 +1,7 @@
 import React from 'react';
 import Slide from '@/components/Slide';
 import Image from 'next/image';
+import { assetPath } from '@/lib/assetPath';
 
 const speakers = [
   { name: 'Max Ghenis', title: 'CEO', photo: '/headshots/max-ghenis.png' },
@@ -28,7 +29,7 @@ export default function CoverSlide() {
             <div key={i} className="text-center">
               <div className="w-28 h-28 relative overflow-hidden rounded-full border-2 border-white/40 mx-auto mb-3">
                 <Image
-                  src={speaker.photo}
+                  src={assetPath(speaker.photo)}
                   alt={speaker.name}
                   fill
                   className="object-cover"
