@@ -6,9 +6,10 @@ import SlideTitle from '@/components/SlideTitle';
 const sections = [
   { number: '01', title: 'What is PolicyEngine?', description: 'Microsimulation, ingredients, and who uses it' },
   { number: '02', title: 'Live demo', description: 'Claude Code in action' },
-  { number: '03', title: 'Multi-agent AI flow', description: 'From single prompt to multi-agent workflow' },
-  { number: '04', title: 'Design principles', description: 'Patterns that emerged from the evolution' },
-  { number: '05', title: 'Results and takeaways', description: 'What we learned and what comes next' },
+  { number: '03', title: 'Previous manual approach', description: 'Program coverage and the scale challenge' },
+  { number: '04', title: 'Multi-agent AI flow', description: 'From single prompt to multi-agent workflow' },
+  { number: '05', title: 'Design principles', description: 'Patterns that emerged from the evolution' },
+  { number: '06', title: 'Results and takeaways', description: 'What we learned and what comes next' },
 ];
 
 export default function AgendaSlide() {

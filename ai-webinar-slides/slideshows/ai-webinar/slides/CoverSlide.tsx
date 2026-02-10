@@ -41,7 +41,7 @@ export default function CoverSlide() {
           ))}
         </div>
 
-        <div className="opacity-60 text-center text-white pt-2">
+        <div className="opacity-60 text-center text-white pt-2 w-full">
           <p>AI Webinar</p>
           <p>February 2026</p>
         </div>
