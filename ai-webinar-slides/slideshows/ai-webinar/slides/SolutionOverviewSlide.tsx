@@ -10,7 +10,8 @@ export default function SolutionOverviewSlide() {
         <SlideTitle>The solution: multi-agent AI</SlideTitle>
       </SlideHeader>
 
-      <div className="flex items-center justify-center mt-32">
+      <div className="mt-24">
+      <div className="flex items-center justify-center">
         <div className="code-block w-full max-w-3xl mx-auto">
           <div className="code-block-header">
             <div className="code-block-dot bg-red-500"></div>
@@ -27,7 +28,23 @@ export default function SolutionOverviewSlide() {
         </div>
       </div>
 
-      <p className="text-xl text-gray-400 mt-10 italic text-center">One command, 90 minutes, a complete pull request</p>
+      <p className="text-xl text-gray-400 mt-6 italic text-center">One command, 90 minutes, a complete pull request</p>
+
+      <div className="grid grid-cols-3 gap-6 mt-10">
+        <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
+          <h3 className="font-semibold text-lg text-gray-800 mb-2">Agents</h3>
+          <p className="text-sm text-gray-500 leading-relaxed"><strong>Autonomous AI workers</strong> that can read files, write code, run tests, and make decisions — like a junior developer that follows instructions precisely.</p>
+        </div>
+        <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
+          <h3 className="font-semibold text-lg text-gray-800 mb-2">Skills</h3>
+          <p className="text-sm text-gray-500 leading-relaxed"><strong>Reusable prompts</strong> that tell an agent <em>how</em> to do a specific task — like a <strong>detailed checklist</strong> a senior developer writes for the team.</p>
+        </div>
+        <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
+          <h3 className="font-semibold text-lg text-gray-800 mb-2">Plugins</h3>
+          <p className="text-sm text-gray-500 leading-relaxed"><strong>Bundles</strong> of agents and skills that can be <strong>shared across projects</strong> — like installing an extension that gives your AI new capabilities.</p>
+        </div>
+      </div>
+      </div>
     </Slide>
   );
 }
