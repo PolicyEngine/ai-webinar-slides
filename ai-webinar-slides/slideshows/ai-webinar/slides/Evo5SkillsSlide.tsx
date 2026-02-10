@@ -95,7 +95,7 @@ export default function Evo5SkillsSlide() {
               );
             })}
 
-            <text x="25" y={skillY + skillHeight / 2 + 4} fontFamily="JetBrains Mono" fontSize="10" fill="var(--text-mid)" fontWeight="600">Skills</text>
+            <text x="5" y={skillY + skillHeight / 2 + 4} fontFamily="JetBrains Mono" fontSize="10" fill="var(--text-mid)" fontWeight="600">Skills</text>
             {skills.map((skill) => {
               const isHovered = hoveredSkill === skill.id;
               return (

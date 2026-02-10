@@ -61,8 +61,8 @@ export default function Evo2PipelineSlide() {
             </thead>
             <tbody>
               {[
-                ['Each agent focused on one task', 'Tests run after seeing impl'],
-                ['Clearer, shorter prompts', 'Tests confirm bugs'],
+                ['Each agent focused on one task', 'Tests run with variable logic in mind'],
+                ['Clearer, shorter prompts', 'Bugs are reinforced, not fixed'],
                 ['Easier to debug failures', 'No validation step'],
                 ['Improve agents independently', null],
               ].map((row, i) => (
@@ -76,7 +76,7 @@ export default function Evo2PipelineSlide() {
 
           <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl">
             <p className="text-amber-800 font-semibold text-base">
-              Key insight: Sequential execution means tests validate what was built&mdash;not what the regulation requires.
+              Key insight: Sequential execution means tests validate existing code patterns&mdash;not actual program document requirements.
             </p>
           </div>
         </div>

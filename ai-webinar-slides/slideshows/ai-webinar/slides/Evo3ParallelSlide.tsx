@@ -63,10 +63,10 @@ export default function Evo3ParallelSlide() {
             </thead>
             <tbody>
               {[
-                ['Tests verify requirements', 'Params/vars mismatch'],
-                ['Catches real bugs', 'Manual iteration'],
-                ['Error rate dropped to 40%', 'No ref validation'],
-                ['Added impl-validator', 'No edge cases'],
+                ['Tests verify requirements', 'No reference validation'],
+                ['Catches real bugs', 'No edge case testing'],
+                ['Error rate dropped to 40%', 'Manual review iterations'],
+                ['Added impl-validator', 'Styling mismatch between params and vars'],
               ].map((row, i) => (
                 <tr key={i}>
                   <td className="py-1.5 pr-4 text-gray-700 align-top"><span className="text-emerald-500 mr-2">&#10003;</span>{row[0]}</td>
@@ -78,7 +78,7 @@ export default function Evo3ParallelSlide() {
 
           <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl">
             <p className="text-amber-800 font-semibold text-base">
-              Key insight: Agent isolation prevents confirmation bias.
+              Key insight: Agent isolation prevents confirmation bias but requires manual intervention on each iteration.
             </p>
           </div>
         </div>

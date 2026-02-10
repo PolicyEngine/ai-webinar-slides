@@ -35,13 +35,13 @@ export default function PartnersSlide() {
         <SlideTitle>Who uses PolicyEngine?</SlideTitle>
       </SlideHeader>
 
-      <div className="w-full mt-4">
-        <div className="grid grid-cols-6 gap-x-6 gap-y-8 w-full px-8">
+      <div className="w-full flex-1 flex items-center mt-4">
+        <div className="grid grid-cols-6 gap-x-6 gap-y-14 w-full px-8">
           {organizations.map((org, idx) => (
             <div
               key={idx}
               className="flex items-center justify-center"
-              style={{ height: '65px' }}
+              style={{ height: '70px' }}
             >
               {org.logo ? (
                 <Image

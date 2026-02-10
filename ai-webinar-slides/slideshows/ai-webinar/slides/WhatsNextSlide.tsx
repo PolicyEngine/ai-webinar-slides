@@ -42,11 +42,14 @@ export default function WhatsNextSlide() {
         </div>
       </div>
 
-      <div className="mt-6 p-4 bg-gray-50 border border-gray-200 rounded-xl text-center">
-        <p className="text-gray-700 text-lg">
-          PolicyEngine is a nonprofit building free, open-source tools for tax and benefit policy analysis.
+      <div className="content-card p-6 mt-6">
+        <div className="flex items-center gap-3 mb-4">
+          <span className="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider">Vision</span>
+          <h3 className="text-xl font-bold text-gray-800">Expanding multi-agent workflows</h3>
+        </div>
+        <p className="text-gray-600">
+          The same agent architecture can be applied beyond program implementation. We want to bring multi-agent workflows to <strong>reform scoring</strong> (automated policy impact analysis), <strong>report writing</strong> (generating research briefs from simulation results), and <strong>custom dashboard creation</strong> (building interactive tools for specific policy questions).
         </p>
-        <p className="text-pe-teal font-semibold mt-1">policyengine.org</p>
       </div>
     </Slide>
   );

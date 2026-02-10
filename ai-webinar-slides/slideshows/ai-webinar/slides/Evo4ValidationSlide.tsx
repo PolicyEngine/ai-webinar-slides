@@ -83,7 +83,7 @@ export default function Evo4ValidationSlide() {
             </thead>
             <tbody>
               {[
-                ['Auto iteration on failures', 'Inconsistent patterns'],
+                ['Automatic iteration cycles', 'Inconsistent patterns'],
                 ['Edge cases covered', 'Long repeated prompts'],
                 ['Citations validated', 'Same rules in every agent'],
                 ['Less manual work', null],
@@ -98,7 +98,7 @@ export default function Evo4ValidationSlide() {
 
           <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl">
             <p className="text-amber-800 font-semibold text-base">
-              Key insight: More agents meant more capability, but also more inconsistency. Need shared knowledge.
+              Key insight: More agents provide more coverage, but also introduces more inconsistency. Shared knowledge is necessary at scale.
             </p>
           </div>
         </div>

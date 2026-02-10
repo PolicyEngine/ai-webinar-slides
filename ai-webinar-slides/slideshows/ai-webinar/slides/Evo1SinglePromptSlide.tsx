@@ -35,7 +35,7 @@ export default function Evo1SinglePromptSlide() {
         <div className="w-[45%] flex flex-col">
           <div className="accent-block mb-5">
             <p className="text-gray-700 text-base">
-              We started with the simplest approach: a single prompt asking Claude to implement New Hampshire TANF end-to-end. One command, one output&mdash;parameters, variables, tests, everything in one shot.
+              We started with the simplest approach: a single prompt asking Claude to implement one benefit program end-to-end. <strong>One command, one output</strong>&mdash;parameters, variables, tests, everything in one shot.
             </p>
           </div>
 
@@ -49,9 +49,8 @@ export default function Evo1SinglePromptSlide() {
             <tbody>
               {[
                 ['Simple to start\u2014one prompt', '70% of outputs had errors'],
-                ['Sometimes produced working code', 'Hard-coded values'],
-                ['Fast iteration on wording', 'No source citations'],
-                [null, 'Wrong formulas passed tests'],
+                ['Produces accurate code on simple tasks', 'Hard-coded values'],
+                ['Fast iteration cycles', 'No source citations'],
               ].map((row, i) => (
                 <tr key={i}>
                   <td className="py-1.5 pr-4 text-gray-700 align-top">{row[0] && <><span className="text-emerald-500 mr-2">&#10003;</span>{row[0]}</>}</td>
@@ -63,7 +62,7 @@ export default function Evo1SinglePromptSlide() {
 
           <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl">
             <p className="text-amber-800 font-semibold text-base">
-              Key insight: Too much context for one prompt. The model couldn&apos;t hold coding standards, legal requirements, and testing patterns all at once.
+              Key insight: Too much context for one prompt. The model couldn&apos;t hold code standards, legal requirements, and testing patterns all at once.
             </p>
           </div>
         </div>
