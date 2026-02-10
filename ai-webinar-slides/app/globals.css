@@ -19,6 +19,8 @@
   --text-light: #7a9494;
   --bg-card: #ffffff;
   --warning: #b45309;
+  --border: #d4dede;
+  --bg-diagram: #f9f8f6;
 }
 
 html {
@@ -308,3 +310,185 @@ h1, h2, h3 {
   from { stroke-dashoffset: 0; }
   to { stroke-dashoffset: -72; }
 }
+
+/* ==================== EXAMPLE PANEL ==================== */
+.example-panel {
+  background: var(--bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(13,115,119,0.08), 0 8px 24px rgba(13,115,119,0.12);
+  border: 2px solid var(--accent);
+}
+
+.example-header {
+  background: var(--bg-diagram);
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+}
+
+.example-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.example-badge {
+  background: var(--accent);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+
+.example-tabs {
+  display: flex;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+}
+
+.example-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 7px 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--text-mid);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.example-tab:hover {
+  background: var(--accent-light);
+  color: var(--text-dark);
+}
+
+.example-tab.active {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+.example-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+}
+
+.example-tab .tab-icon { font-size: 0.85rem; }
+.example-tab .tab-label { font-weight: 500; }
+
+.example-body {
+  padding: 10px 14px;
+  background: var(--bg-diagram);
+}
+
+.example-section { margin-bottom: 2px; }
+.example-section:last-child { margin-bottom: 0; }
+
+.example-section-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.example-section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.example-file {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: var(--bg-card);
+  border-radius: 8px;
+  margin-bottom: 6px;
+  border: 1px solid var(--border);
+}
+
+.example-file-icon { font-size: 1rem; }
+
+.example-file-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.example-file-status {
+  margin-left: auto;
+  font-size: 0.68rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.example-file-status.success { background: rgba(16,185,129,0.15); color: #059669; }
+.example-file-status.warning { background: rgba(180,83,9,0.15); color: #b45309; }
+.example-file-status.error { background: rgba(220,38,38,0.12); color: #dc2626; }
+
+.example-code {
+  background: linear-gradient(135deg, #f5f7f7 0%, var(--bg-diagram) 100%);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.example-output {
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  border: 1px solid var(--border);
+}
+
+.example-output-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 2px 6px;
+  color: var(--text-mid);
+  border-radius: 4px;
+  transition: background 0.15s ease;
+}
+
+.example-output-line:hover { background: var(--accent-light); }
+.example-output-line .icon { flex-shrink: 0; font-weight: 600; }
+.example-output-line.error { color: #dc2626; }
+.example-output-line.error:hover { background: rgba(220,38,38,0.08); }
+.example-output-line.success { color: #059669; }
+.example-output-line.success:hover { background: rgba(5,150,105,0.08); }
+.example-output-line.warning { color: #b45309; }
+.example-output-line.warning:hover { background: rgba(180,83,9,0.08); }

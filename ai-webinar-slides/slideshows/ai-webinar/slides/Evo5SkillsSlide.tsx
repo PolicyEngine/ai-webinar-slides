@@ -5,6 +5,7 @@ import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
 import IconDefs from '@/components/IconDefs';
+import ExamplePanel from '@/components/ExamplePanel';
 
 const agents = {
   'doc-collector': { x: 80, y: 200, r: 35, icon: '#icon-books', label: 'document-collector', labelY: 250 },
@@ -117,7 +118,9 @@ export default function Evo5SkillsSlide() {
         </div>
 
         {/* Right: text */}
-        <div className="w-[40%] flex flex-col">
+        <div className="w-[40%] flex flex-col relative">
+          <ExamplePanel step={4} />
+
           <div className="accent-block mb-5">
             <p className="text-gray-700 text-base">
               We introduced <strong>skills</strong>&mdash;reusable knowledge modules that agents load on demand. Instead of repeating instructions in every prompt, we extracted shared knowledge into focused documents.

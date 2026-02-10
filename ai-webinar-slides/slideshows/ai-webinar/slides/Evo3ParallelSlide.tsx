@@ -1,8 +1,11 @@
+'use client';
+
 import React from 'react';
 import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
 import IconDefs from '@/components/IconDefs';
+import ExamplePanel from '@/components/ExamplePanel';
 
 export default function Evo3ParallelSlide() {
   return (
@@ -47,7 +50,9 @@ export default function Evo3ParallelSlide() {
         </div>
 
         {/* Right: text */}
-        <div className="w-[40%] flex flex-col">
+        <div className="w-[40%] flex flex-col relative">
+          <ExamplePanel step={2} />
+
           <div className="accent-block mb-5">
             <p className="text-gray-700 text-base">
               Test-creator and rules-engineer run in <strong>parallel</strong>. Both read the same documentation. Neither sees the other&apos;s output. When tests fail, it reveals actual discrepancies between implementation and requirements.
