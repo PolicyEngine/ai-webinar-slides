@@ -30,7 +30,7 @@ const options: { icon: Icon; title: string; verdict: string; problems: string[] 
   {
     icon: IconCalculator,
     title: 'DIY with a staffer',
-    verdict: 'Uncertain and uncredible',
+    verdict: 'Uncertain, not credible',
     problems: [
       'Tax and transfer policy is enormously complex',
       'Back-of-envelope won\u2019t match CBO\u2019s eventual score',

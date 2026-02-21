@@ -3,30 +3,30 @@ import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
 import Image from 'next/image';
-import { IconFileText, IconCode, IconChartBar, IconRefresh } from '@tabler/icons-react';
+import { IconFileText, IconCode, IconChartBar, IconUsers, IconRefresh } from '@tabler/icons-react';
 
 const FOOTER = 'Abundance DMV · February 2026';
 
 const stages = [
   {
     icon: IconFileText,
-    label: 'Atlas',
-    description: 'Legal document archive of statutes, regulations, and IRS guidance',
-  },
-  {
-    icon: IconCode,
-    label: 'RAC',
-    description: 'Rules as Code DSL that encodes law into executable policy rules',
+    label: 'Encode',
+    description: 'AI reads statutes subsection by subsection, encodes them as executable rules',
   },
   {
     icon: IconChartBar,
-    label: 'AutoRAC',
-    description: 'AI reads statutes subsection by subsection and generates encodings',
+    label: 'Score',
+    description: 'Prospective analysis: cost, poverty, distributional impact of proposed policy',
+  },
+  {
+    icon: IconUsers,
+    label: 'Implement',
+    description: 'Benefits platforms deliver to citizens based on the same encoded rules',
   },
   {
     icon: IconRefresh,
-    label: 'Full cycle',
-    description: 'From bill drafting through scoring to implementation — continuously updated',
+    label: 'Evaluate',
+    description: 'Retrospective analysis: did the policy work? Like TAXSIM studies, but open-source',
   },
 ];
 
@@ -46,8 +46,8 @@ export default function FutureSlide() {
         </div>
       </SlideHeader>
 
-      <p className="text-lg text-gray-600 mb-6 -mt-4">
-        Open infrastructure for encoded law. 501(c)(3) nonprofit building the public good layer so AI and government can understand legislation the same way.
+      <p className="text-base text-gray-600 mb-5 -mt-4">
+        Open infrastructure for encoded law. One computational model powers the full policy cycle.
       </p>
 
       <div className="grid grid-cols-4 gap-4">
@@ -67,9 +67,12 @@ export default function FutureSlide() {
         ))}
       </div>
 
-      <p className="text-center text-base text-gray-500 mt-6">
-        Removing the bottleneck so government can move at the speed policy demands.
-      </p>
+      <div className="flex items-center justify-center mt-5 gap-3 text-gray-400">
+        <IconRefresh size={18} stroke={1.5} />
+        <p className="text-sm">
+          Evaluation feeds back into better encoding &mdash; a virtuous cycle, all built on the same deterministic models of individual effects and economic models of societal impact.
+        </p>
+      </div>
     </Slide>
   );
 }
