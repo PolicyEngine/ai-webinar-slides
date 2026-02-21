@@ -29,7 +29,7 @@ export default function GovAdoptionSlide() {
             CTO currently embedded at 10 Downing Street
           </h3>
           <p className="text-sm text-gray-600 leading-relaxed">
-            UK government chose PolicyEngine because policy moves faster than traditional analysis can keep up.
+            PolicyEngine embedded into No 10&apos;s internal dashboards &mdash; real-time analysis instead of waiting on other agencies.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export default function GovAdoptionSlide() {
             Governor McKee used PolicyEngine to design his Child Tax Credit
           </h3>
           <p className="text-sm text-gray-600 leading-relaxed">
-            $325 fully refundable credit, $36.7M cost, benefiting 29.2% of RI residents &mdash; designed with our calculator.
+            $325 fully refundable credit, $36.7M cost, benefiting 29.2% of RI residents &mdash; designed directly by the governor&apos;s team, no outside contractor needed.
           </p>
         </div>
 

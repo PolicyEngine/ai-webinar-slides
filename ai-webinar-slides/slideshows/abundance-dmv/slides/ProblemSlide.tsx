@@ -69,6 +69,10 @@ export default function ProblemSlide() {
           </div>
         ))}
       </div>
+
+      <p className="text-center text-lg text-gray-500 mt-6">
+        This is a state capacity problem: governments can&apos;t analyze their own policy options fast enough.
+      </p>
     </Slide>
   );
 }

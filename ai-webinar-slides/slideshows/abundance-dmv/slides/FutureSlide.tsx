@@ -34,7 +34,7 @@ export default function FutureSlide() {
   return (
     <Slide footerText={FOOTER}>
       <SlideHeader>
-        <SlideTitle>The future: from drafting to implementation</SlideTitle>
+        <SlideTitle>The future: infrastructure for state capacity</SlideTitle>
       </SlideHeader>
 
       <div className="grid grid-cols-4 gap-4 mt-4">
@@ -59,7 +59,7 @@ export default function FutureSlide() {
           <div className="flex-1">
             <div className="slide-tag mb-2">Rules Foundation</div>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Building the public good infrastructure for machine-readable law. From AI-assisted to fully AI-generated policy encoding &mdash; identifying inconsistencies in statutes along the way.
+              Public good infrastructure for machine-readable law. AI encodes statutes subsection by subsection, identifying inconsistencies along the way. Removing the bottleneck so government can move at the speed policy demands.
             </p>
           </div>
           <div className="flex items-center gap-6 ml-8">

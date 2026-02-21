@@ -27,6 +27,8 @@ export default function FourthOptionSlide() {
         </div>
 
         <p className="text-lg text-gray-500 mt-8">
+          Building state capacity means giving every level of government the tools to analyze policy in real time.
+          <br />
           That&apos;s what we&apos;ve been building for the last five years.
         </p>
       </div>
