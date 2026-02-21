@@ -32,7 +32,7 @@ export default function FutureSlide() {
   return (
     <Slide footerText={FOOTER}>
       <SlideHeader>
-        <SlideTitle>Rules Foundation</SlideTitle>
+        <SlideTitle>AI enables a new paradigm of encoding</SlideTitle>
       </SlideHeader>
 
       <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-4 leading-relaxed">
