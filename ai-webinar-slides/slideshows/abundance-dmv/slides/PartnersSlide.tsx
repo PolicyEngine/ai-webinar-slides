@@ -21,7 +21,7 @@ const organizations = [
   { name: 'Gary Community Ventures', logo: '/logos/organizations/gary-community-ventures.png' },
   { name: 'Mothers Outreach Network', logo: '/logos/organizations/mothers-outreach-network.png' },
   { name: 'Atlanta Fed', logo: '/logos/organizations/atlanta-fed.png' },
-  { name: 'Center for Growth and Opportunity', logo: '/logos/organizations/cgo.png' },
+  { name: 'Center for Growth and Opportunity', logo: '/logos/organizations/cgo.jpg' },
   { name: 'Living Wage Calculator', logo: '/logos/organizations/living-wage-calculator.png' },
   { name: 'UHERO', logo: '/logos/organizations/uhero.png' },
   { name: 'UBI Center', logo: '/logos/organizations/ubicenter.png' },

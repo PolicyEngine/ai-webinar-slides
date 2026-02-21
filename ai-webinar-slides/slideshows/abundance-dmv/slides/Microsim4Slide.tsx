@@ -5,14 +5,14 @@ import SlideTitle from '@/components/SlideTitle';
 
 const FOOTER = 'Abundance DMV · February 2026';
 
-export default function MicrosimSlide() {
+export default function Microsim4Slide() {
   return (
     <Slide footerText={FOOTER}>
       <SlideHeader>
         <SlideTitle>How microsimulation works</SlideTitle>
       </SlideHeader>
 
-      <div className="flex justify-center items-center mt-6">
+      <div className="flex justify-center items-center mt-4">
         <div className="space-y-4">
           <div className="microsim-table">
             <table>
@@ -99,6 +99,10 @@ export default function MicrosimSlide() {
               Dynamics
             </div>
           </div>
+
+          <p className="text-center text-lg text-gray-500">
+            Scale to millions of representative households &rarr; national estimates
+          </p>
         </div>
       </div>
     </Slide>
