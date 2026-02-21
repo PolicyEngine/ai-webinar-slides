@@ -1,77 +1,55 @@
 import React from 'react';
 import Slide from '@/components/Slide';
-import SlideHeader from '@/components/SlideHeader';
-import SlideTitle from '@/components/SlideTitle';
 import Image from 'next/image';
-import { IconFileText, IconCode, IconChartBar, IconUsers, IconRefresh } from '@tabler/icons-react';
-
-const FOOTER = 'Abundance DMV · February 2026';
+import { IconFileText, IconChartBar, IconUsers, IconRefresh } from '@tabler/icons-react';
 
 const stages = [
-  {
-    icon: IconFileText,
-    label: 'Encode',
-    description: 'AI reads statutes subsection by subsection, encodes them as executable rules',
-  },
-  {
-    icon: IconChartBar,
-    label: 'Score',
-    description: 'Prospective analysis: cost, poverty, distributional impact of proposed policy',
-  },
-  {
-    icon: IconUsers,
-    label: 'Implement',
-    description: 'Benefits platforms deliver to citizens based on the same encoded rules',
-  },
-  {
-    icon: IconRefresh,
-    label: 'Evaluate',
-    description: 'Retrospective analysis: did the policy work? Like TAXSIM studies, but open-source',
-  },
+  { icon: IconFileText, label: 'Encode' },
+  { icon: IconChartBar, label: 'Score' },
+  { icon: IconUsers, label: 'Implement' },
+  { icon: IconRefresh, label: 'Evaluate' },
 ];
 
 export default function FutureSlide() {
   return (
-    <Slide footerText={FOOTER}>
-      <SlideHeader>
-        <div className="flex items-center gap-4">
-          <SlideTitle>Rules Foundation</SlideTitle>
+    <Slide isCover>
+      <div className="flex flex-col items-center justify-center space-y-8 relative z-10">
+        <h1 className="text-5xl font-bold text-center text-white leading-tight">
+          Encoding the world&apos;s rules
+        </h1>
+
+        <p className="text-2xl text-white/80 text-center max-w-3xl leading-relaxed">
+          AI makes it possible to encode every statute into executable models &mdash; creating a new paradigm for how policy is designed, scored, delivered, and evaluated.
+        </p>
+
+        <div className="flex items-center gap-3 mt-4">
+          {stages.map((stage, i) => (
+            <div key={i} className="flex items-center gap-3">
+              <div className="flex items-center gap-2 bg-white/10 border border-white/20 rounded-xl px-5 py-3">
+                <stage.icon size={22} stroke={1.5} className="text-white/90" />
+                <span className="text-lg font-semibold text-white">{stage.label}</span>
+              </div>
+              {i < stages.length - 1 && (
+                <span className="text-white/40 text-xl">&rarr;</span>
+              )}
+            </div>
+          ))}
+          <span className="text-white/40 text-xl">&rarr;</span>
+          <span className="text-white/60 text-sm italic">cycle repeats</span>
+        </div>
+
+        <div className="mt-4 flex items-center gap-4 bg-white/10 border border-white/20 rounded-xl px-6 py-4">
           <Image
-            src="/logos/rules-foundation.svg"
+            src="/logos/rules-foundation-light.svg"
             alt="Rules Foundation"
-            width={160}
-            height={40}
+            width={140}
+            height={36}
             className="object-contain"
           />
+          <p className="text-base text-white/70 leading-relaxed max-w-lg">
+            Open infrastructure for this cycle. Evaluation feeds back into better encoding &mdash; a virtuous cycle for the public good.
+          </p>
         </div>
-      </SlideHeader>
-
-      <p className="text-base text-gray-600 mb-5 -mt-4">
-        Open infrastructure for encoded law. One computational model powers the full policy cycle.
-      </p>
-
-      <div className="grid grid-cols-4 gap-4">
-        {stages.map((stage, i) => (
-          <div key={i} className="content-card p-5 text-center relative">
-            <div className="icon-circle mx-auto mb-3" style={{ width: '48px', height: '48px' }}>
-              <stage.icon size={24} stroke={1.5} style={{ color: 'var(--pe-teal)' }} />
-            </div>
-            <h3 className="text-lg font-bold text-pe-dark mb-2">{stage.label}</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">{stage.description}</p>
-            {i < stages.length - 1 && (
-              <div className="absolute -right-3 top-1/2 -translate-y-1/2 text-gray-300 text-2xl z-10">
-                &rarr;
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-
-      <div className="flex items-center justify-center mt-5 gap-3 text-gray-400">
-        <IconRefresh size={18} stroke={1.5} />
-        <p className="text-sm">
-          Evaluation feeds back into better encoding &mdash; a virtuous cycle, all built on the same deterministic models of individual effects and economic models of societal impact.
-        </p>
       </div>
     </Slide>
   );
