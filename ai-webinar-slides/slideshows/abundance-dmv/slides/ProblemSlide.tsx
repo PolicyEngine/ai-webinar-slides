@@ -1,12 +1,12 @@
-import React, { ComponentType } from 'react';
+import React from 'react';
 import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
-import { IconBuilding, IconBriefcase, IconCalculator } from '@tabler/icons-react';
+import { IconBuilding, IconBriefcase, IconCalculator, type Icon } from '@tabler/icons-react';
 
 const FOOTER = 'Abundance DMV · February 2026';
 
-const options: { icon: ComponentType<{ size?: number; stroke?: number }>; title: string; verdict: string; problems: string[] }[] = [
+const options: { icon: Icon; title: string; verdict: string; problems: string[] }[] = [
   {
     icon: IconBuilding,
     title: 'Ask CBO',
