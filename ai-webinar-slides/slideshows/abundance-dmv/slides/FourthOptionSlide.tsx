@@ -22,7 +22,7 @@ export default function FourthOptionSlide() {
             Ask AI &mdash; backed by a credible economic model
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Building state capacity means giving every level of government the tools to analyze policy in real time.
+            Policy analysis was already too slow. AI-driven economic change makes it urgent &mdash; policymakers need to respond at the speed the world is moving.
           </p>
         </div>
 

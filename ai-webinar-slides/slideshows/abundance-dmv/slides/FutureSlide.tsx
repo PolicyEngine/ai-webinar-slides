@@ -19,7 +19,7 @@ export default function FutureSlide() {
         </h1>
 
         <p className="text-2xl text-white/80 text-center max-w-3xl leading-relaxed">
-          AI makes it possible to encode every statute into executable models &mdash; creating a new paradigm for how policy is designed, scored, delivered, and evaluated.
+          AI amplifies the need. As the economy transforms, we need to encode our rules so policymakers can simulate change, respond in real time, and design policies that produce the outcomes we all want.
         </p>
 
         <div className="flex items-center gap-3 mt-4">
