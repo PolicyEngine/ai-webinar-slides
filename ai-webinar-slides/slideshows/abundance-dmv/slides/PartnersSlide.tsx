@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const FOOTER = 'Abundance DMV · February 2026';
 
-const organizations = [
+const organizations: { name: string; logo: string; smaller?: boolean }[] = [
   { name: '10 Downing Street', logo: '/logos/organizations/10-downing-street.png' },
   { name: 'Joint Economic Committee', logo: '/logos/organizations/jec.png' },
   { name: 'Bureau of Economic Analysis', logo: '/logos/organizations/bea.png' },
@@ -37,19 +37,51 @@ export default function PartnersSlide() {
         <SlideTitle>Who uses PolicyEngine?</SlideTitle>
       </SlideHeader>
 
-      <div className="w-full flex-1 flex items-center mt-2">
-        <div className="grid grid-cols-7 gap-x-6 gap-y-10 w-full px-4">
+      <div className="grid grid-cols-3 gap-4 mt-2">
+        <div className="content-card p-4 animate-fade-in-up delay-1">
+          <div className="slide-tag mb-2" style={{ fontSize: '0.7rem' }}>UK government</div>
+          <h3 className="text-sm font-bold text-pe-dark mb-1">
+            CTO embedded at 10 Downing Street
+          </h3>
+          <p className="text-xs text-gray-600 leading-relaxed">
+            Real-time policy analysis in No 10&apos;s internal dashboards.
+          </p>
+        </div>
+
+        <div className="content-card p-4 animate-fade-in-up delay-2">
+          <div className="slide-tag mb-2" style={{ fontSize: '0.7rem' }}>Rhode Island</div>
+          <h3 className="text-sm font-bold text-pe-dark mb-1">
+            Governor McKee designed his CTC with PolicyEngine
+          </h3>
+          <p className="text-xs text-gray-600 leading-relaxed">
+            $325 credit, $36.7M cost, 29.2% of residents benefit.
+          </p>
+        </div>
+
+        <div className="content-card p-4 animate-fade-in-up delay-3">
+          <div className="slide-tag mb-2" style={{ fontSize: '0.7rem' }}>Cross-partisan</div>
+          <h3 className="text-sm font-bold text-pe-dark mb-1">
+            Congress, think tanks, and universities
+          </h3>
+          <p className="text-xs text-gray-600 leading-relaxed">
+            JEC, Niskanen, AEI, Georgetown, NBER, and more.
+          </p>
+        </div>
+      </div>
+
+      <div className="w-full mt-4 animate-fade-in-up delay-4">
+        <div className="grid grid-cols-7 gap-x-5 gap-y-6 w-full px-2">
           {organizations.map((org, idx) => (
             <div
               key={idx}
               className="flex items-center justify-center"
-              style={{ height: '60px' }}
+              style={{ height: '45px' }}
             >
               <Image
                 src={org.logo}
                 alt={org.name}
-                width={org.smaller ? 70 : 100}
-                height={55}
+                width={org.smaller ? 60 : 85}
+                height={40}
                 className="object-contain"
               />
             </div>
