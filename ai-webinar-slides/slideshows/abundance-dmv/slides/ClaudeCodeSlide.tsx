@@ -40,17 +40,14 @@ export default function ClaudeCodeSlide() {
             <h3 className="text-lg font-bold text-pe-dark">Where it&apos;s going</h3>
           </div>
           <p className="text-sm text-gray-600 leading-relaxed">
-            Rules Foundation: AI-assisted to fully AI-generated policy encoding. From law interpretation through benefit delivery to budget scoring.
+            AI will change society dramatically. Policymakers need tools to respond equally fast &mdash; and AI needs credible economic models to give good advice.
           </p>
         </div>
       </div>
 
       <div className="mt-8 content-card p-6 text-center" style={{ background: 'linear-gradient(135deg, var(--pe-light) 0%, white 100%)' }}>
-        <p className="text-2xl font-bold text-pe-dark">
-          Live demo
-        </p>
-        <p className="text-base text-gray-500 mt-2">
-          &ldquo;What would a $3,000 fully refundable child tax credit cost, and how would it affect child poverty?&rdquo;
+        <p className="text-xl font-bold text-pe-dark">
+          Let&apos;s check on our results
         </p>
       </div>
     </Slide>
