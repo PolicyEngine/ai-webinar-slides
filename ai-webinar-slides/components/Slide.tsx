@@ -8,6 +8,7 @@ export interface SlideProps {
   showFooter?: boolean;
   isCover?: boolean;
   isEnd?: boolean;
+  footerText?: string;
 }
 
 export default function Slide({
@@ -16,6 +17,7 @@ export default function Slide({
   showFooter = true,
   isCover = false,
   isEnd = false,
+  footerText,
 }: SlideProps) {
   return (
     <div className={`
@@ -57,7 +59,7 @@ export default function Slide({
             className="opacity-90"
           />
           <div className="text-white text-sm opacity-90 font-medium">
-            AI Webinar · February 2026
+            {footerText || 'AI Webinar · February 2026'}
           </div>
         </div>
       )}
