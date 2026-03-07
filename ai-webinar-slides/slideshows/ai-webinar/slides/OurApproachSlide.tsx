@@ -14,24 +14,24 @@ export default function OurApproachSlide() {
         <div className="grid grid-cols-3 gap-8">
           {/* Policies Column */}
           <div>
-            <div className="bg-[#319795] text-white text-center py-6 rounded-t-lg mb-6">
+            <div className="bg-pe-teal text-white text-center py-6 rounded-t-lg mb-6">
               <h2 className="text-4xl font-bold">Policies</h2>
             </div>
-            <ul className="space-y-3 text-xl text-[#2C7A7B]">
+            <ul className="space-y-3 text-xl text-pe-dark">
               <li className="flex items-center gap-3">
-                <span className="text-[#319795] text-2xl leading-none">•</span>
+                <span className="text-pe-teal text-2xl leading-none">•</span>
                 <span>Federal income &amp; payroll tax</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#319795] text-2xl leading-none">•</span>
+                <span className="text-pe-teal text-2xl leading-none">•</span>
                 <span>State income tax (all 50 states)</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#319795] text-2xl leading-none">•</span>
+                <span className="text-pe-teal text-2xl leading-none">•</span>
                 <span>Child Tax Credits (federal &amp; state)</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#319795] text-2xl leading-none">•</span>
+                <span className="text-pe-teal text-2xl leading-none">•</span>
                 <span>SNAP, Medicaid, CHIP, ACA PTC, SSI</span>
               </li>
             </ul>
@@ -39,24 +39,24 @@ export default function OurApproachSlide() {
 
           {/* Households Column */}
           <div>
-            <div className="bg-[#2C7A7B] text-white text-center py-6 rounded-t-lg mb-6">
+            <div style={{ backgroundColor: 'var(--pe-color-primary-600)' }} className="text-white text-center py-6 rounded-t-lg mb-6">
               <h2 className="text-4xl font-bold">Households</h2>
             </div>
-            <ul className="space-y-3 text-xl text-[#2C7A7B]">
+            <ul className="space-y-3 text-xl text-pe-dark">
               <li className="flex items-center gap-3">
-                <span className="text-[#319795] text-2xl leading-none">•</span>
+                <span className="text-pe-teal text-2xl leading-none">•</span>
                 <span>CPS ASEC foundation</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#319795] text-2xl leading-none">•</span>
+                <span className="text-pe-teal text-2xl leading-none">•</span>
                 <span>Integrates IRS PUF, ACS, SCF, and SIPP</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#319795] text-2xl leading-none">•</span>
+                <span className="text-pe-teal text-2xl leading-none">•</span>
                 <span>State-specific datasets</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#319795] text-2xl leading-none">•</span>
+                <span className="text-pe-teal text-2xl leading-none">•</span>
                 <span>Calibrated to state aggregates</span>
               </li>
             </ul>
@@ -64,12 +64,12 @@ export default function OurApproachSlide() {
 
           {/* Dynamics Column */}
           <div>
-            <div className="bg-[#234E52] text-white text-center py-6 rounded-t-lg mb-6">
+            <div style={{ backgroundColor: 'var(--pe-color-primary-800)' }} className="text-white text-center py-6 rounded-t-lg mb-6">
               <h2 className="text-4xl font-bold">Dynamics</h2>
             </div>
-            <ul className="space-y-3 text-xl text-[#2C7A7B]">
+            <ul className="space-y-3 text-xl text-pe-dark">
               <li className="flex items-center gap-3">
-                <span className="text-[#319795] text-2xl leading-none">•</span>
+                <span className="text-pe-teal text-2xl leading-none">•</span>
                 <span>Labor supply elasticities</span>
               </li>
             </ul>
@@ -79,17 +79,17 @@ export default function OurApproachSlide() {
         {/* Bottom row with methodology */}
         <div className="grid grid-cols-3 gap-8 mt-8">
           <div className="bg-blue-50 p-4 rounded-lg">
-            <p className="text-lg italic text-[#026AA2] font-semibold">
+            <p className="text-lg italic font-semibold" style={{ color: 'var(--pe-color-blue-700)' }}>
               Legislative references &amp; thousands of unit tests
             </p>
           </div>
           <div className="bg-blue-50 p-4 rounded-lg">
-            <p className="text-lg italic text-[#026AA2] font-semibold">
+            <p className="text-lg italic font-semibold" style={{ color: 'var(--pe-color-blue-700)' }}>
               Machine learning calibration for accuracy
             </p>
           </div>
           <div className="bg-blue-50 p-4 rounded-lg">
-            <p className="text-lg italic text-[#026AA2] font-semibold">
+            <p className="text-lg italic font-semibold" style={{ color: 'var(--pe-color-blue-700)' }}>
               CBO-based behavioral assumptions
             </p>
           </div>

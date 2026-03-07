@@ -17,7 +17,7 @@ export default function Evo2PipelineSlide() {
 
       <div className="flex gap-8 h-[calc(100vh-280px)]">
         {/* Left: diagram */}
-        <div className="w-[55%] bg-[#f9f8f6] rounded-xl border border-gray-100 flex items-center justify-center p-4">
+        <div className="w-[55%] bg-[var(--bg-diagram)] rounded-xl border border-gray-100 flex items-center justify-center p-4">
           <svg className="full-width-flow-svg" viewBox="0 0 800 220">
             <IconDefs />
             <circle className="network-node" cx="80" cy="110" r="50" />

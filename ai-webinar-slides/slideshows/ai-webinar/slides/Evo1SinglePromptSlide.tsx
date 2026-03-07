@@ -17,7 +17,7 @@ export default function Evo1SinglePromptSlide() {
 
       <div className="flex gap-8 h-[calc(100vh-280px)]">
         {/* Left: diagram */}
-        <div className="w-[55%] bg-[#f9f8f6] rounded-xl border border-gray-100 flex items-center justify-center p-4">
+        <div className="w-[55%] bg-[var(--bg-diagram)] rounded-xl border border-gray-100 flex items-center justify-center p-4">
           <svg className="full-width-flow-svg" viewBox="0 0 500 200">
             <IconDefs />
             <circle className="network-node" cx="150" cy="100" r="60" />
@@ -25,12 +25,12 @@ export default function Evo1SinglePromptSlide() {
             <text className="network-label" x="150" y="180">Single Prompt</text>
             <line className="network-line" x1="210" y1="100" x2="280" y2="100" />
             <polygon className="flow-arrow" points="280,94 294,100 280,106" />
-            <circle className="network-node" cx="350" cy="100" r="50" style={{ stroke: '#dc2626' }} />
-            <g transform="translate(350,100) scale(1.4)" className="svg-icon" style={{ color: '#dc2626' }}><use href="#icon-document" /></g>
+            <circle className="network-node" cx="350" cy="100" r="50" style={{ stroke: 'var(--pe-color-error)' }} />
+            <g transform="translate(350,100) scale(1.4)" className="svg-icon" style={{ color: 'var(--pe-color-error)' }}><use href="#icon-document" /></g>
             <text className="network-label" x="350" y="170">Output</text>
-            <circle cx="420" cy="55" r="30" fill="#fef2f2" stroke="#dc2626" strokeWidth="2.5"/>
-            <text x="420" y="52" textAnchor="middle" fontFamily="JetBrains Mono" fontSize="15" fontWeight="600" fill="#dc2626">70%</text>
-            <text x="420" y="68" textAnchor="middle" fontFamily="JetBrains Mono" fontSize="10" fill="#dc2626">errors</text>
+            <circle cx="420" cy="55" r="30" fill="#fef2f2" stroke="var(--pe-color-error)" strokeWidth="2.5"/>
+            <text x="420" y="52" textAnchor="middle" fontFamily="JetBrains Mono" fontSize="15" fontWeight="600" fill="var(--pe-color-error)">70%</text>
+            <text x="420" y="68" textAnchor="middle" fontFamily="JetBrains Mono" fontSize="10" fill="var(--pe-color-error)">errors</text>
           </svg>
         </div>
 

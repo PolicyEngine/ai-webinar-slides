@@ -51,7 +51,7 @@ export default function Evo5SkillsSlide() {
 
       <div className="flex gap-8 h-[calc(100vh-280px)]">
         {/* Left: interactive diagram */}
-        <div className="w-[60%] bg-[#f9f8f6] rounded-xl border border-gray-100 flex items-center justify-center p-3">
+        <div className="w-[60%] bg-[var(--bg-diagram)] rounded-xl border border-gray-100 flex items-center justify-center p-3">
           <svg className="full-width-flow-svg" viewBox="0 0 600 490">
             <IconDefs />
             <ellipse className="loop-indicator" cx="310" cy="200" rx="230" ry="160" />

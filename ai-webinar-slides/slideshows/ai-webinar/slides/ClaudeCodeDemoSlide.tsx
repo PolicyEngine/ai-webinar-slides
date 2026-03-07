@@ -8,7 +8,7 @@ export default function ClaudeCodeDemoSlide() {
         <div className="text-6xl font-bold text-pe-dark mb-6">Live Demo</div>
         <div className="text-3xl text-gray-500 mb-12">Claude Code</div>
 
-        <div className="w-[600px] bg-[#1e1e2e] rounded-xl p-6 shadow-2xl border border-gray-700">
+        <div className="w-[600px] bg-[var(--pe-color-gray-900)] rounded-xl p-6 shadow-2xl border border-gray-700">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-3 h-3 rounded-full bg-red-500"></div>
             <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
