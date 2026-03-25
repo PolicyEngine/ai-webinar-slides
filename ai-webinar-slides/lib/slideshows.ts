@@ -1,10 +1,16 @@
 import { SlideshowConfig, SlideshowMetadata } from './types';
 import { aiWebinarConfig } from '@/slideshows/ai-webinar/config';
 import { abundanceDmvConfig } from '@/slideshows/abundance-dmv/config';
+import { searchlightConfig } from '@/slideshows/searchlight/config';
+import { searchlightHealthcareConfig } from '@/slideshows/searchlight-healthcare/config';
+import { groundworkCollaborativeConfig } from '@/slideshows/groundwork-collaborative/config';
 
 export const slideshows: SlideshowConfig[] = [
   aiWebinarConfig,
   abundanceDmvConfig,
+  searchlightConfig,
+  searchlightHealthcareConfig,
+  groundworkCollaborativeConfig,
 ];
 
 export function getSlideshowById(id: string): SlideshowConfig | undefined {
