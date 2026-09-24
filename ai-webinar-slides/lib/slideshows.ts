@@ -1,10 +1,12 @@
 import { SlideshowConfig, SlideshowMetadata } from './types';
 import { aiWebinarConfig } from '@/slideshows/ai-webinar/config';
 import { abundanceDmvConfig } from '@/slideshows/abundance-dmv/config';
+import { searchlightConfig } from '@/slideshows/searchlight/config';
 
 export const slideshows: SlideshowConfig[] = [
   aiWebinarConfig,
   abundanceDmvConfig,
+  searchlightConfig,
 ];
 
 export function getSlideshowById(id: string): SlideshowConfig | undefined {
